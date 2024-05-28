@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Glory:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Shopping List</h1>
+ 
+        <div class="main-container">
+          <div class="cards-container">
+              <div class="first-row">
+              <div class="fruits-card card_custom" style="width: 18rem;">
+                <img src="./assets/fruits1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Select your fruits</h5>
+                  <p class="card-text">We have a wide range of fresh fruits from our local farmers.</p>
+                  <form action="">
+                      <label for="fruits"></label>
+                      <select name="fruits" class="card-selector1">
+                        <option value="Apples">Apples</option>
+                        <option value="Bananas">Bananas</option>
+                        <option value="Cherry">Cherry</option>
+                        <option value="Kiwi">Kiwi</option>
+                        <option value="Mango">Mango</option>
+                      </select>
+                  </form>
+                  <div class="price-frt-box">
+                    <p class="price-frt-text">Quantity:</p>
+                    <input type="number" class="frt-user-value" placeholder=" per kg">
+                    <p class = "price-frt-value price-box">4.01</p>
+                    <button class="add-item1">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="vegetables-card card_custom" style="width: 18rem;">
+                <img src="./assets/vegetables1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Select your vegetables</h5>
+                  <p class="card-text">Feel the freshness of your favourite vegetables from our local farmers.</p>
+                  <form action="">
+                      <label for="vegetables"></label>
+                      <select name="vegetables" class="card-selector2">
+                          <option value="Cucumber">Cucumber</option>
+                          <option value="Carrots">Carrots</option>
+                          <option value="Tomatos">Tomatos</option>
+                          <option value="Avocado">Avocado</option>
+                          <option value="Cauliflower">Cauliflower</option>
+                      </select>
+                  </form>
+                  <div class="price-veg-box">
+                    <p class="price-veg-text">Quantity:</p>
+                    <input type="text/number" class="veg-user-value" placeholder=" per kg">
+                    <p class = "price-veg-value price-box">2.99</p>
+                    <button class="add-item2">+</button>
+                  </div>
+                </div>
+              </div> 
+              <div class="bakery-card card_custom" style="width: 18rem;">
+                <img src="./assets/Bakery1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Select your bakery</h5>
+                  <p class="card-text">Your favourite bakery is now available in our store, Have a look.</p>
+                  <form action="">
+                      <lable for="bakery"></lable>
+                      <select name="bakery" class="card-selector3">
+                          <option value="SUnflower-Bread">SunFlower Seed Bread</option>
+                          <option value="Crusty-bread">Crusty Bread</option>
+                          <option value="Rye-bread">Rye Bread</option>
+                          <option value="Whole-grain">Whole Grain Bread</option>
+                          <option value="Wheat-bread">Wheat Bread</option>
+                      </select>
+                  </form>
+                  <div class="price-bak-box">
+                    <p class="price-bak-text">Quantity:</p>
+                    <input type="text/number" class="bek-user-value" placeholder=" per bread">
+                    <p class = "price-bak-value">3.99</p>
+                    <button class="add-item3">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="drinks-card card_custom" style="width: 18rem;">
+                <img src="/assets/Drinks1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Select your drink</h5>
+                  <p class="card-text">Select your drimk and get rid of your thirst, we support local businesses.</p>
+                  <form action="">
+                    <lable for="drinks"></lable>
+                    <select name="drinks" class="card-selector4">
+                        <option value="Fanta">Fanta</option>
+                        <option value="Coca-cola">Coca-cola</option>
+                        <option value="Sprite">Sprite</option>
+                        <option value="Still-water">Still Water</option>
+                        <option value="Sparkling-water">Sparkling Water</option>
+                    </select>
+                </form>
+                <div class="price-bev-box">
+                  <p class="price-bev-text">Quantity:</p>
+                  <input type="text/number" class="bev-user-value" placeholder=" per bottle">
+                  <p class = "price-bev-value">5.01</p>
+                  <button class="add-item4">+</button>
+                </div>
+                </div>
+              </div>
+              <div class="meats-card card_custom" style="width: 18rem;">
+                <img src="./assets/meats1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Select your meats</h5>
+                  <p class="card-text">Our store is happy to provide best quality meats from our local farmers. </p>
+                  <form action="">
+                    <lable for="meats"></lable>
+                    <select name="meats" class="card-selector5" >
+                        <option value="Chicken-breast">Chicken Breast</option>
+                        <option value="Chicken-thighs">Chicken Thighs</option>
+                        <option value="Sausages">Sausages</option>
+                        <option value="Bacon">Bacon</option>
+                        <option value="Ham">Ham</option>
+                    </select>
+                </form>
+                <div class="price-meat-box">
+                  <p class="price-meat-text">Quantity:</p>
+                  <input type="text/number" class="meat-user-value" placeholder=" per kg">
+                  <p class = "price-meat-value">15.99</p>
+                  <button class="add-item5">+</button>
+                </div>
+                </div>
+              </div>
+              <div class="sweets-card card_custom" style="width: 18rem;">
+                <img src="./assets/sweets1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Select your sweets</h5>
+                  <p class="card-text">Our store has a wide range of world wide sweets.</p>
+                  <form action="">
+                    <lable for="sweets"></lable>
+                    <select name="sweets" class="card-selector6">
+                        <option value="Chocolate-mousse">Chocolate Mousse</option>
+                        <option value="Tiramisu">Tiramisu</option>
+                        <option value="Cadbury-chocolate">Cadbury Chocolate
+                        </option>
+                        <option value="Milk-chocolate">Milk Chocolate</option>
+                        <option value="Haribo">Haribo</option>
+                    </select>
+                </form>
+                <div class="price-swt-box">
+                  <p class="price-swt-text">Quantity:</p>
+                  <input type="text/number" class="swt-user-value" placeholder=" for each">
+                  <p class = "price-swt-value">3.01</p>
+                  <button class="add-item6">+</button>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+          <div class="shopping-list">
+            <div class="shoppingList-items"> 
+              <h2>Shopping-List</h2>
+              <div class="itemsAdded"></div>
+            </div>
+            <div class="shoppingList-total">
+                <p class="paragraph-result">Total: <span class="result">0</span></p>
+            </div>
+          </div>
+       </div>
+ <script src="app.js"></script>
+ <script src = "classes.js"></script>
+</body>
+</html>

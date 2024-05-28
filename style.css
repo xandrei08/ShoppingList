@@ -1,0 +1,214 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Glory', sans-serif;
+    background-color: #9f9f9f;
+}
+
+h1{
+    text-align: center;
+}
+/* Main Container */
+.main-container{
+    display:flex;
+    flex-direction: row;
+}
+
+.cards-container{
+    width:60%;
+}
+.first-row{
+width:fit-content;
+height:auto;
+display:block;
+margin-left:5%;
+}
+.shopping-list{
+    width:10%;
+}
+.shopping-list > h2{
+    text-align: center;
+}
+.card-title{
+    font-size:1.1vw;
+}
+.card-img-top{
+    width: fit-content;
+    object-fit:cover;
+}
+.card_custom{
+    box-shadow: 0.69vw 0.69vw 0.34vw #aaaaaa;
+    height: 22.9vw;
+    display:inline-block;
+    margin-right:2%;
+    margin-bottom:2%;
+}
+.card-body{
+    padding:0 1.04vw;
+    height: fit-content;
+    position: relative;
+    margin-top:-10%;
+}
+
+.add-item{
+  background:#ffffff;
+  font-size:1.04vw;
+  box-shadow: inset 0 0p 0p #2F3B47;
+  transition: all 0.5s !important;
+}
+.add-item:hover{
+    box-shadow: inset 10.42vw 0 0 #2F3B47;
+    color:#ffffff;
+    cursor:pointer;
+}
+.card-selector{
+    padding:0.34;
+    font-size:0.83vw;
+    font-weight: bold;
+    border:none;
+    width:min-content;
+}
+
+.shopping-list{
+display:grid;
+grid-auto-flow:row;
+grid-template-rows:95% 5%;
+height:109vh;
+border:0.069vw solid #aaaaaa;
+width:20%;
+height: auto;
+max-height: fit-content;
+}
+.shoppingList-total p{
+    font-size:20px;
+    font-weight: bold;
+    margin:0 0 1.5vw 1.5vw;
+}
+.shoppingList-items h2{
+    text-align: center;
+}
+/* Notes container */ 
+
+.notes-container > h4{
+    text-align: center;
+}
+
+/* Price box container */
+.price-frt-box,.price-veg-box,.price-bak-box,.price-bev-box,.price-meat-box,.price-swt-box{
+    display:flex;
+    margin-top:20%;
+    flex-direction:row;
+    justify-content: space-around;
+    width:100%;
+    height:3vh;
+}
+.frt-user-value,.veg-user-value,.bek-user-value,.bev-user-value,.meat-user-value,.swt-user-value{
+    width:40%;
+}
+.price-frt-box > p,
+.price-veg-box > p,
+.price-bak-box > p,
+.price-bev-box > p,
+.price-meat-box > p,
+.price-swt-box > p{
+  padding:0;
+  margin:0;
+  margin-top:1.3%;
+  font-size:1vw;
+  font-weight:700;
+}
+/* Container for total items added */
+
+.itemsAdded{
+    width:fit-content;
+    height: auto;
+    width:100%;
+}
+.userValue{
+    width:100%;
+}
+.item-cost{
+    margin:0 1.5vw;
+}
+
+@media only screen and (max-width: 768px) and (orientation : portrait){
+
+   .main-container{
+       display:flex;
+       flex-direction: column;
+       align-items: center;
+   }
+    .first-row{
+    display:inline-block;
+    float:left;
+    height:fit-content;
+    text-align: center;
+    margin-left:0;
+    }
+    .card-title{
+        font-size:4.2vw;
+    }
+    .card-text{
+        font-size:4.5vw;
+    }
+    .price-frt-box > p,
+    .price-veg-box > p,
+    .price-bak-box > p,
+    .price-bev-box > p,
+    .price-meat-box > p,
+    .price-swt-box > p{
+        padding:0;
+        margin:0;
+        margin-top:1.3%;
+        font-size:4vw;
+        font-weight:700;
+    }
+  .price-frt-box,
+  .price-veg-box,
+  .price-bak-box,
+  .price-bev-box,
+  .price-meat-box,
+  .price-swt-box{
+      margin-top:7%;
+  }
+  .cards-container{
+      width:100%;
+  }
+  .card_custom{
+      height: auto;
+   margin-bottom:15%;
+  }
+    .card-img-top{
+        width: fit-content;
+        object-fit:cover;
+        width:fit-content;
+    }
+    .card-body{
+        padding: 1.04vw;
+        height: auto;
+        position: relative;
+    }
+    .shopping-list,
+    .shoppingList-total{
+        width:70%;
+        height: auto;
+    }
+    .shoppingList-total{
+        margin-top:10%;
+    }
+    .form-option{
+        background-color:blue;
+        position:relative;
+    }
+    .card-selector1,
+    .card-selector2,
+    .card-selector3,
+    .card-selector4,
+    .card-selector5,
+    .card-selector6{
+        font-size:4vw;
+    }
+  
+}
